@@ -1,18 +1,35 @@
 #include<iostream>
 using namespace std;
 int main(){
-     long a,b,d=0,e;
+     long a,b,d=0,e,f,i,count=0;
+     int pro,g;
      cout<<"enter any number =";
      cin>>a;
      e=a;
+     g=a;
+
      while(e>0){
-     b=e%10;
-     d=d+b*b*b;
-     e=e/10;
+          f=e%10;
+          count++;
+          e=e/10;
+          
+     }
+     // cout<<count;
+     while(g>0){
+     b=g%10;
+     pro=1;
+     for(i=1;i<=count;i++){
+          pro=pro*b;
+     }
+     d=d+pro;
+     g=g/10;
+     
      }
      if(d==a)
      cout<<endl<<" number is armstrong";
      else
      cout<<endl<<"number is not armstrong";
+     // cout<<endl<<"power = "<<d;
+     // cout<<endl<<"count ="<<count;
      
 }
