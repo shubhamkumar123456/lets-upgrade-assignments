@@ -3,6 +3,7 @@ using namespace std;
 
 int max(int a[],int size);
 int min(int a[], int size);
+int rev(int a[],int size);
 int main(){
 
     int a[5],i;
@@ -13,9 +14,12 @@ int main(){
 
        int maximum=max(a,5);
        int minimum=min(a,5);
+       int reverse=rev(a,5);
     //    cout<<"maximun of array = "<<max(a,5);
+    cout<<endl;
     cout<<"maximun of array = "<<maximum<<endl;
-    cout<<"minimum of array = "<<minimum;
+    cout<<"minimum of array = "<<minimum<<endl;
+    // cout<<"reverse of array ="<<reverse;
     
     
 }
@@ -44,3 +48,17 @@ int min(int a[],int size){
     }
      return minn;
 }
+int rev(int a[],int size){
+    int i;
+    cout<<endl<<"the reverse of array is  ";
+    for(i=size-1;i>=0;i--){
+        cout<<a[i];
+        
+    }
+    // for(i=0;i<=5-1;i++){
+    //     cout<<endl<<b[i];
+    // }
+//    return a[5];
+    
+    }
+    
