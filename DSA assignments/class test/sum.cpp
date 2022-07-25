@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int a[5],i,sum=0;
+    int a[5],i,sum=0,b[5];
     for(i=0;i<=5-1;i++){
         cout<<endl<<"enter the elements in array : ";
         cin>>a[i];
@@ -10,5 +10,6 @@ int main(){
     for(i=0;i<=5-1;i++){
         sum=sum+a[i];
     }
-    cout<<endl<<"the sum of array = "<<sum;
+    b[i]=sum;
+    cout<<endl<<"the sum of array in b= "<<b[i];
 }
