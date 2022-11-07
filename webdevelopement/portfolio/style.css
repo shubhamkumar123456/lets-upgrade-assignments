@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    /* background-color:rgba(218, 165, 32, 0.611); */
+    background-color: black;
+    color: white;
+}
+.logo{
+    text-align: center;
+    padding: 5px;
+    margin-left: 200px;
+    text-decoration:underline;   
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color:goldenrod;
+    /* background-color: rgba(54, 54, 54, 0.764); */
+    height: 50px;   
+}
+.navbar nav{
+    
+    text-align: right;
+    position: fixed;
+    top: 10px;
+    right: 3px;  
+}
+
+
+.navbar nav ul li{
+    display: inline-block;
+    list-style: none;
+  padding: 5px;
+  margin-left: 80px;
+  padding-right: 30px;
+}
+.navbar nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position:relative;
+}
+.navbar nav ul li a::after{
+    content:'';
+    width:0%;
+    /* height is the hover underline */
+    height:3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%
+}
+.main{
+    /* background:grey; */
+    display: flex;
+    height: 100vh;
+}
+.main .mypic{
+    margin-top: 150px;
+    margin-left: 150px;
+    background-color: #ff004f;
+    width:400px;
+    height: 500px;
+    /* flex-wrap: wrap; */
+}
+.main .mypic img{
+    width: 400px;
+    height: 500px;
+    border-radius: 30%;
+    /* background-color: #ff004f; */
+}
+.main .text{
+    /* background-color: aqua; */
+   
+    text-align:left;
+    margin-left: 50px;
+    padding-top: 230px;
+    
+}
+.text h2{
+    font-size:40px;
+    padding-top: 50px;
+    padding-left: 60px;
+}
+.text h2 span{
+    color: #ff004f;
+}
+.text p{
+    
+    padding-left: 60px;
+}
+.text .btn{
+    display:inline-block;
+    margin-left: 100px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ff004f;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 30vh;
+    cursor: pointer;
+}
+
+/* #about{
+    padding: 80px 0px;
+   
+    color: antiquewhite;
+} */
+.title {
+    text-align: center;
+    padding: 20px;
+}
+.about-col-2{
+    /* background-color: aqua; */
+    text-align: center;
+    margin: 100px;
+    margin-top: 10px;
+    height: 100vh;
+    
+}
+.about-col-2 p{
+    /* background-color: aqua; */
+    color: bisque;
+    /* margin-left: 50px; */
+    /* margin-right: 50px; */
+    
+    padding-top: 20px 20px;
+    padding-left: 50px;
+    /* padding-bottom: 20px; */
+  
+}
+.tab-titles{
+    text-align: center;
+    display: flex;
+    margin-top: 50px;
+    justify-content:space-around;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    width:50%;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left: 50px;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+ width: 30%;
+}
+/* span{
+    color: #ff004f;
+} */
+.box1{
+    /* background-color: aqua; */
+    display: flex;
+    
+}
+.tab-contents ul{
+    /* background-color: blue; */
+    text-align: left;
+    margin-left: 150px;
+    padding-top: 50px;
+    
+}
+.tab-contents ul li{
+    list-style: none;
+margin: 50px 0px;
+border-left:3px solid #ff004f;
+padding-left: 5px;
+font-size: 20px;
+
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 15px;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color:goldenrod; */
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+.contact .content p{
+
+    font-weight: 500;
+}
+.contactinfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contactinfo .allcontact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contactinfo .allcontact .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactinfo .allcontact .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    
+}
+.contactinfo .allcontact .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactinfo .allcontact .box .text h3{
+    font-weight: 500;
+    color:#ff004f;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    color: black;
+
+}
+.contactform h2{
+    font: 30px;
+    color: #333;
+    font-weight: 500;
+
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,.contactform .inputbox input textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid goldenrod;
+    outline: none;
+    resize: none;
+    /* border: 3px solid goldenrod; */
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,.contactform .inputbox input:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox textarea:focus ~ span,.contactform .inputbox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+
