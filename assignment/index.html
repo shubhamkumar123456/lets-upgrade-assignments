@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaion timing</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        div{
+    width: 100px;
+    height: 60px;
+    background-color: skyblue;
+    font-weight: bold;
+    position: relative;
+    animation: run 5s infinite;
+    text-align: center;
+}
+.box1{
+    animation-timing-function: linear;
+}
+.box2{
+    animation-timing-function:ease;
+}
+.box3{
+    animation-timing-function:ease-in;
+}
+.box4{
+    animation-timing-function:ease-out;
+}
+.box5{
+    animation-timing-function:ease-in-out;
+}
+@keyframes run{
+    from{left:0px};
+    to{left:350px};
+}
+    </style>
+</head>
+<body>
+    <div class="box1 box" id =" box">box1</div>
+    <div class="box2 box">box2</div>
+    <div class="box3 box">box3</div>
+    <div class="box4 box">box4</div>
+    <div class="box5 box">box5</div>
+  
+</body>
+</html>

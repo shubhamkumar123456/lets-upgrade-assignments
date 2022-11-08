@@ -1,0 +1,28 @@
+div{
+    width: 100px;
+    height: 60px;
+    background-color: skyblue;
+    font-weight: bold;
+    position: relative;
+    animation: run 5s infinite;
+    text-align: center;
+}
+.box1{
+    animation-timing-function: linear;
+}
+.box2{
+    animation-timing-function:ease;
+}
+.box3{
+    animation-timing-function:ease-in;
+}
+.box4{
+    animation-timing-function:ease-out;
+}
+.box5{
+    animation-timing-function:ease-in-out;
+}
+@keyframes run{
+    from{left:0px};
+    to{left:350px};
+}
