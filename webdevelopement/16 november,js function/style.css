@@ -1,0 +1,15 @@
+#print{
+    width: 100px;
+    height: 40px;
+    margin-left: 45%;
+}
+.cart{
+    display: flex;
+    margin: 50px;
+}
+ i{
+    font-size: 30px;
+    position: relative;
+  
+    display: flex;
+}
