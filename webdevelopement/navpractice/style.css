@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:#EAEFBD;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.flex .logo{
+color: white;
+font-size: 33px;
+font-weight: bold;
+line-height: 70px;
+padding-left: 40px;
+}
+.flex{
+    background-color: #90BE6D;
+    box-shadow: 0 3px 15px;
+    height: 70px;
+    /* opacity: 0.3; */
+}
+.flex ul{
+    margin-right: 30px;
+    /* display: none; */
+}
+.flex ul li{
+    display: inline-block;
+}
+.flex ul li a:hover{
+    background: #4E7133;
+}
+.flex ul li a{
+    color:black;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #90BE6D;
+    transition: 0.5s;
+}
+.flex ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid#23dbdb;
+    opacity: 0;
+    visibility: hidden;
+}
+.flex ul li:hover >ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s linear;
+
+
+}
+.flex ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+}
+.flex ul ul li a{
+    line-height: 50px;
+
+}
+.flex ul ul ul{
+    border-top: none;
+}
+.flex ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+.flex ul ul li a i{
+    margin-left: 15px;
+}
+.bar{
+    display:none ;
+}
+.bar i{
+    font-size: 35px;
+    margin-top: 10px;
+}
+@media(max-width:800px){
+    .bar{
+        display:flex ;
+    }
+    .container .flex ul li{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navlist {
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .navlink.active{
+        display: flex;
+    }
+    /* .navlink .active{
+        display: flex;
+    } */
+}
