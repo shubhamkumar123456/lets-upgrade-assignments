@@ -1,0 +1,88 @@
+
+.navhover{
+    /* display:none; */
+    /* visibility: hidden; */
+    position: relative;
+    background-color:white;
+    color: black;
+    position: absolute;
+    z-index: 1000;
+    width: 600px;
+    height: 500px;
+    right: 10px;
+    top: 46px;
+    left: -250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.navhover ul li a{
+    color: black;
+    font-size: small;
+    
+}
+.signin h2 .navhover{
+    display: none;
+}
+.signin h2:hover .navhover{
+    display:flex;
+}
+
+.navhover i{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: -40px;
+    left: 300px;
+}
+.navhover .part1{
+ 
+  margin-top: 50px;
+  /* height: 100px; */
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+.navhover .part1 button{
+    width: 200px;
+    height: 30px;
+    background: linear-gradient(to bottom,#f8e3ad,#EEBA37);
+}
+.navhover .part1  p{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+.navhover .part1  p a{
+    margin-left: 10px;
+}
+.navhover .part2{
+    display: flex;
+    margin-top: 50px;
+}
+.part-a,
+.part-b{
+    display: flex;
+    flex-direction: column;
+}
+.part-a{
+    margin-right: 40px;
+}
+.part-b{
+    margin-left: 40px;
+}
+.part-a h2,.part-b h2{
+    margin-bottom: 20px;
+}
+.part1 p{
+    color: black;
+    display: flex;
+}
+.part1 p span a {
+color: #007185;;
+}
+.part1  a:hover{
+color: red;
+}
