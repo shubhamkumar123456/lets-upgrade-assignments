@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /* border:1px solid black; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+.btn{
+    background: black;
+    color: aqua;
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    height: 50px;
+    border: 5px solid aqua;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0 0px 50px 0 ,0px 0px 50px 0 #15f4ee,
+    0px 0px 0 #15f4ee ,0px 0px 0 #15f4ee;
+    /* text-shadow: 0 0 5px #15f4ee,0 0 5px #15f4ee; */
+}
