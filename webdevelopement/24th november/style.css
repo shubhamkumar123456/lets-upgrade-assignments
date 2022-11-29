@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+height: 100vh;
+width: 90%;
+margin: auto;
+align-items: center;
+justify-content: center;
+background-color: #7DCE82;
+height: 800px;
+
+}
+.container .box1{
+    display: flex;
+    margin-bottom: 20px;
+    
+   
+}
+.container .box1 .india{
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    background:grey;
+    text-align: center;
+    opacity: 0.7;
+    border: 2px solid black;
+}
+.container .box1 .china{
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    background: lightslategray;
+    text-align: center;
+    opacity: 0.7;
+    border: 2px solid black;
+}
+.container .box2{
+    display: flex;
+    gap: 20px;
+    /* background:grey; */
+}
+.container .box2 .usa{
+    width: 300px;
+    height: 300px;
+    margin-right: 0px;
+    background-color: #EECF6D;
+    text-align: center;
+    opacity: 0.7;
+    border: 2px solid black;
+}
+.container .box2 .japan{
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    background-color: beige;
+    text-align: center;
+    opacity: 0.7;
+    border: 2px solid black;
+}
+p{
+   text-align: center;
+   margin-top: 100px;
+   font-size: 40px;
+   font-weight:600;
+   background: #7DCE82;
+
+  
+}
+.container h1{
+    margin: 30px;
+}
