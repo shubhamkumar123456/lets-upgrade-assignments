@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-box">
+            <div class="inputbox">
+                <!-- <input type="text" name="" id=""> -->
+                <span id="pass-box">Your password...</span>
+            </div>
+            <div class="password-box space-between" >
+                <p>Password Length <input type="number" id="total-char" max="30" min="2" value="10"></p>
+            </div>
+            <div class="Uppercase-box space-between">
+            <label for="uppercase">Contains Uppercase </label><input type="checkbox" id="uppercase" class="check"> 
+            </div>
+            <div class="Lowecase-box space-between">
+            <label for="lowercase">Contains Lowecase</label>  <input type="checkbox" id="lowercase" class="check">
+            </div>
+            <div class="Number-box space-between">
+            <label for="numbers">Contains Numbers</label>  <input type="checkbox" id="numbers" class="check">
+            </div>
+            <div class="symbol-box space-between">
+            <label for="symbols">Contains symbols </label><input type="checkbox" id="symbols" class="check"> 
+            </div>
+            <div class="button-box space-between">
+                <button class="btn">Generate password</button>
+            </div>
+        </div>
+    </div>
+    <script src="/script1.js"></script>
+</body>
+</html>
